@@ -4,7 +4,6 @@ int main()
     printf("---Numero abundante, perfecto o deficiente--");
     int num,i,sum=0;
     
-    
     do
     {
         printf("\nIngrese numero positivo menor que 580:");
@@ -17,14 +16,14 @@ int main()
         
     }
     while(num > 580);
-            //suma de divisores
+        //suma de divisores
         for (i=1; i<num; i++){
             if(num%i==0){
                 sum = sum + i;
         }
                 
             }
-            //comparar 
+        //comparar 
         if(sum > num)
         printf("\nEs abundante");
         else if(sum == num)
