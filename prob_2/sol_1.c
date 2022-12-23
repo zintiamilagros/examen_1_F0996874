@@ -17,7 +17,7 @@ int main()
                 }
                 
             }
-//comparar 
+            //comparar 
             if(sum > num)
             printf("\nEs abundante");
             else if(sum == num)
