@@ -1,28 +1,32 @@
 #include<stdio.h>
 int main()
 {
-    int num,i,suma;
-    printf("Numero abundante, perfecto o deficiente");
-    do 
+    int num,i,sum=0;
+    printf("---Numero abundante, perfecto o deficiente--");
     {
-        printf("\nIngrese numero:");
+        printf("\nIngrese numero positivo menor que 580:");
         scanf("%d",&num);
-    }
-    while(num < 2);
-    suma=0;
-    
-    for(i = 1;i < num;i++)
-    {
-        if(num%i==0)
-        {
-            suma += i;
+        
+        if(num < 580)
+        printf("Numero valido!");
+        else 
+        printf("Numero erroneo, vuelva a ingresar numero");
+
+        for (i=1; i<num; i++){
+            if(num%i==0){
+                sum = sum + i;
+                
+            }
         }
-    }
-    if(suma > num)
-        printf("abundante");
-    else if(suma == num)
-        printf("perfecto");
-    else
-        printf("deficiente");
-    return 0;        
+        
+        if(sum > num)
+            printf("\nEs abundante");
+        else if(sum == num)
+            printf("\nEs Perfecto");
+        else
+            printf("\nEs deficiente");
+        return 0;           
+    }    
+    
+  
 }
