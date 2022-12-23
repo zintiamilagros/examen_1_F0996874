@@ -1,0 +1,3 @@
+Es un programa de entradas y salidas, 
+consiste en tomar datos, registros o entradas del usuario e imprimir 
+o mostrar en pantalla su correspondiente resultado o salida
