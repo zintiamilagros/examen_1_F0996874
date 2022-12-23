@@ -1,4 +1,4 @@
-#include<Stdio.h>
+#include<stdio.h>
 int main()
 {
     int num,i,suma;
@@ -6,11 +6,12 @@ int main()
     do 
     {
         printf("\nIngrese numero:");
-        scan("%d",&num);
+        scanf("%d",&num);
     }
-    while(num<2);
+    while(num < 2);
     suma=0;
-    for(i=1;i<num;i++)
+    
+    for(i = 1;i < num;i++)
     {
         if(num%i==0)
         {
