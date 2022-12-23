@@ -8,24 +8,31 @@ int main()
         scanf("%d",&num);
         
         if(num < 580)
-        printf("Numero valido!");
-        else 
-        printf("Numero erroneo, vuelva a ingresar numero");
-
-        for (i=1; i<num; i++){
-            if(num%i==0){
-                sum = sum + i;
+        {
+            printf("Numero valido!");  
+            //suma de divisores
+            for (i=1; i<num; i++){
+                if(num%i==0){
+                    sum = sum + i;
+                }
                 
             }
+           //comparar 
+            if(sum > num)
+            printf("\nEs abundante");
+            else if(sum == num)
+            printf("\nEs Perfecto");
+            else
+            printf("\nEs deficiente");
+            return 0;
         }
         
-        if(sum > num)
-            printf("\nEs abundante");
-        else if(sum == num)
-            printf("\nEs Perfecto");
-        else
-            printf("\nEs deficiente");
-        return 0;           
+        else 
+        {
+            printf("Numero erroneo, vuelva a ingresar numero");
+        }
+        
+           
     }    
     
   
